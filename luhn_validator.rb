@@ -13,7 +13,6 @@ module LuhnValidator
       sum += dig
       .to_s.chars.(&:to_i).sum
     end
-      sum.modulo(10)
-      .zero?
+      sum.modulo(10).zero?
   end
 end
